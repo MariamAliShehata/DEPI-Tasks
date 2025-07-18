@@ -1,0 +1,269 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: "Roboto", sans-serif;
+    /* background-color: #141212; */
+}
+
+
+.navbar{
+    display: flex;
+    background-color: #110f0f;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    font-style: thin;
+    font-weight: 100;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    width: 10%;
+}
+.logo img{
+    width: 100%;
+}
+.nav-content{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+.nav-content ul{
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+} 
+.nav-content .icons {
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.nav-content .icons i{
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.nav-content .icons i:hover{
+    transform: scale(1.2);
+}
+.nav-content .icons:last-child::after{
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #DEC700;
+    border-radius: 50%;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+}
+.menu-icon{
+    display: none;
+    font-size: large;
+    margin-right: 20px;
+}
+@media (max-width: 768px) {
+    .nav-content{
+        display: none;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .logo{
+        width: 20%;
+    }
+}
+.home{
+    background-color: #141212;
+    height: 100vh;
+    display: flex;
+    color: #fff;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 120px;
+    
+    
+}
+.item1{
+    align-self: flex-start;
+    width: 25%;
+}
+
+.item1 h2 span{
+    color: rgba(255, 255, 255, 0.5);
+}
+.item1 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-style: thin;
+    font-weight: 100;
+}
+.item1 h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+.home-img{
+    width: 40%;
+    align-self: center;
+}
+.home-img img{
+    width: 100%;    
+}
+.sticky{
+    width: 30px;
+    height: 130px;
+    border-radius: 25px 0 0 25px;
+    background-color: #DEC700;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sticky-icons {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.sticky-icons li i {
+    
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.sticky-icons li i:hover {
+    transform: scale(1.2);
+}
+.item2{
+    align-self: center;
+    width: 30%;
+}
+.item2 span{
+    font-family: "Sacramento", cursive;
+    font-size: 16px;
+    color: #DEC700;
+    font-weight: 400;
+}
+.item2 h1{
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+.item2 p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-style: thin;
+    font-weight: 100;
+    letter-spacing: 0%;
+}
+@media (max-width:768px){
+    .home{
+        flex-direction: column;
+        padding: 100px 20px 20px 20px;
+        gap: 30px;
+        align-items: center;
+        height: auto;
+    }
+    .item1 , .item2 , .home-img{
+        width: 100%;
+        text-align: center;
+    }
+    .item1 h2{
+        font-size: 16px;
+    }
+    .item1 p,
+    .item2 p {
+    font-size: 14px;
+    }
+    .item2 h1{
+        font-size: 20px;
+    }
+    .home-img img {
+    max-width: 250px;
+    }
+
+    .sticky {
+    width: 25px;
+    height: 100px;
+    top: 70px;
+    }
+
+    .sticky-icons li i {
+    font-size: 14px;
+    }
+}
+/* to be continued */
+.home-footer{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    color: #fff;
+    height: 150px;
+}
+.fruit-img{
+    width: 30%;
+    height: 150px;
+    
+
+}
+.fruit-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+.home-card{
+    background-color: rgba(23, 23, 25, 0.8);
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    column-gap: 20px;
+    
+}
+.home-card .content{
+    width: 80%;
+}
+.home-card .content p{
+    font-size: 12px;
+    font-style: thin;
+    font-weight: 100;
+    padding-bottom: 20px;
+}
+.home-card .salary span{
+    padding: 10px 0px 10px 10px;
+    
+}
+.home-card .salary .before-dis{
+    font-size: 11px;
+    font-style: thin;
+    text-decoration: line-through;
+}
+.home-card .salary button{
+    background-color: #DEC700;
+    width: 90px;
+    height: 50px;
+    color: #fff;
+    border-radius: 5px;
+    border: #DEC700 1px solid;
+    margin-top: 20px;
+    transition: 1s;
+    font-style: bold;
+}
+.home-card .salary button:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}

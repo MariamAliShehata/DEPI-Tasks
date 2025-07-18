@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+</head>
+<body>
+    <h1 align="center">Novell Services Login</h1>
+
+    <form action="#">
+
+        <table>
+            <tr>
+                <td>
+                    <label for="uname">User Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="uname" name="uname">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="upass">Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="upass" name="upass">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="ucity">City Of:</label>
+                </td>
+                <td>
+                    <input type="text" id="ucity" name="ucity">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="uemployment">Employment:</label>
+                </td>
+                <td>
+                    <input type="text" id="uemployment" name="uemployment">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="webserver">Webserver:</label>
+                </td>
+                <td>
+                    <select name="webserver" id="webserver">
+                        <option selected>— Choose a server —</option>
+                        <option  value="Apache">Apache</option>
+                        <option value="Nginx">Nginx</option>
+                        <option value="Caddy">Caddy</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="urole">Please Specify <br> Your Role:</label>
+                </td>
+                <br>
+                <td>
+                    <input type="radio" id="urole" name="urole" value="admin">
+                    <label for="urole">Admin</label>
+
+                    <br>
+                    <input type="radio" id="urole" name="urole" value="Engineer">
+                    <label for="urole">Engineer</label>
+
+                    <br>
+                    <input type="radio" id="urole" name="urole" value="Manager">
+                    <label for="urole">Manager</label>
+
+                    <br>
+                    <input type="radio" id="urole" name="urole" value="Guest">
+                    <label for="urole">Guest</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="signon">Single sign-on <br> to the following:</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="signon" name="signon" value="mail">
+                    <label for="signon">Mail</label>
+                    <br>
+                    <input type="checkbox" id="signon" name="signon" value="Payroll">
+                    <label for="signon">Payroll</label>
+
+                    <br>
+                    <input type="checkbox" id="signon" name="signon" value="Self-Services">
+                    <label for="signon">Self-Services</label>
+                </td>
+            </tr>
+        </table>
+        <button  type="submit">Login</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>
